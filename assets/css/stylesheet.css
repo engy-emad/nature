@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ :root {
+    --color: #fff;
+    --background: #e6f1f1;
+    --text-color: #000;
+    --ul-color: #ff9970;
+    --dropdown-color: #ddd;
+    --dropdown-background: #f1f1f1;
+    --dropdown-show: rgba(0, 0, 0, 0.2);
+}
+
+
+/* STYLE HEADER CONTAIN NAVBAR AND UL */
+
+
+/* STYLE NAVBAR */
+
+header nav {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    width: 100%;
+    background: var(--dropdown-background);
+    position: fixed;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul li a,
+.dropbtn {
+    display: inline-block;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.25em;
+    margin-left: 40px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdown-background);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px var(--dropdown-show);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--dropdown-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.link {
+    color: var(--ul-color);
+}
+
+ul li a:hover {
+    color: var(--ul-color);
+}
+
+
+/* HEADER END */
+
+
+/* STYLE MAIN CONTAIN SECTION,1,2,3,4 */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* SECTION1  START*/
+
+.section1 {
+    width: 100%;
+    min-height: 75vh;
+    background-image: url('../images/view.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color);
+}
+
+.section1 h3 {
+    font-size: 1.5em;
+}
+
+.section1 h1 {
+    font-size: 3em;
+    margin-block: 20px;
+}
+
+.section1 h4 {
+    font-size: 1.25em;
+}
+
+
+/* SECTION1 END */
+
+
+/* SECTION2  START*/
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.section2 img {
+    margin-bottom: 1.5em;
+    margin-left: 2.5em;
+}
+
+.section2 a {
+    background: var(--text-color);
+    color: var(--ul-color);
+    text-align: center;
+    padding: 10px;
+    margin-inline: 10em;
+}
+
+.section2 h3 {
+    margin-block: 1.5em;
+}
+
+.section2 span {
+    color: #7f8c8d;
+    margin-inline: 10em;
+}
+
+
+/* SECTION2 END */
+
+
+/* SECTION3  START*/
+
+.section3 {
+    background-color: var(--dropdown-background);
+    position: relative;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 7.5em;
+}
+
+
+/* STYLE DROW PANDA */
+
+.panda {
+    width: 350px;
+    height: 300px;
+    background: var(--color);
+    border-radius: 50%;
+}
+
+.panda::before,
+.panda::after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #000;
+    border-radius: 50%;
+    top: -2em;
+    left: 47em;
+}
+
+.panda::after {
+    left: 28em;
+}
+
+.panda.eyes::before,
+.panda.eyes::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 40px;
+    background: #fff;
+    border: 20px solid #000;
+    border-bottom: 10px solid #000;
+    border-radius: 50%;
+    top: 100px;
+    left: 45em;
+}
+
+.panda.eyes::after {
+    left: 35em;
+}
+
+.nose::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: #000;
+    /* border: 20px solid #000; */
+    border-radius: 50%;
+    top: 11em;
+    left: 40.5em;
+}
+
+.mouse::before {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 20px;
+    background: #000;
+    top: 17em;
+    left: 38em;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-inline: 10px;
+}
+
+
+/* SECTION3 END */
+
+
+/* SECTION4  START*/
+
+.section4 {
+    display: flex;
+    margin-left: 40px;
+}
+
+.section4 img {
+    max-width: 600px;
+}
+
+.section4 h2 {
+    margin-block: 1.5em;
+    padding: 10px;
+}
+
+.section4 p {
+    margin-block: 1.5em;
+    padding: 10px;
+}
+
+.section4 a {
+    background: var(--text-color);
+    color: var(--ul-color);
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* A TAG ACTIVE,GOVER,VISTED AND LINK */
+
+.section4 a:hover {
+    color: var(--text-color);
+    background: var(--ul-color);
+}
+
+.section4 a:active {
+    color: var(--color);
+}
+
+.section4 a:visited {
+    border: 1px solid var(--ul-color);
+}
+
+.section4 a:link {
+    color: #fc5bfe;
+}
+
+
+/* SECTION4 END  */
+
+
+/* MAIN END */
+
+
+/* FOOTER CONTAIN  FORM INSIDE INPUT TYPES SEARCH AND EMAIL */
+
+footer form {
+    width: 100%;
+    height: 150px;
+    margin-top: 2em;
+    background: var(--dropdown-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer input {
+    max-width: 400px;
+    padding: .3em;
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-block: .5em;
+    border-radius: 10px;
+}
+
+
+/* INPUT VAILD */
+
+footer input:valid {
+    border: 4px solid green;
+}
+
+
+/* INPUT INVAILD */
+
+input:invalid {
+    border: 4px solid red;
+}
+
+
+/* FOOTER END */
+
+
+/* MEDDIA QUERY PHONE */
+
+@media only screen and (max-width: 480px) {
+    .section2,
+    .section3,
+    .section4 {
+        flex-direction: column;
+        margin-block: 10px;
+    }
+    .section1 h1 {
+        font-size: 2em;
+    }
+    .section2 h3,
+    .section2 span,
+    .section2 a {
+        margin-left: 3em;
+    }
+    .section4 img {
+        max-width: 400px;
+    }
+    .section4 h2 {
+        font-size: 1em;
+    }
+    .section4 p {
+        font-size: .85em;
+    }
+    .section4 a {
+        font-size: .8em;
+    }
+    .panda {
+        width: 250px;
+        height: 200px;
+        background: #fff;
+        border-radius: 50%;
+    }
+    .panda::before,
+    .panda::after {
+        position: absolute;
+        content: '';
+        width: 90px;
+        height: 90px;
+        background: #000;
+        border-radius: 50%;
+        border: 2px solid #000;
+        top: 3.5em;
+        left: 4em;
+    }
+    .panda::after {
+        left: 19.5em;
+    }
+    .panda.eyes::before,
+    .panda.eyes::after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 20px;
+        background: #fff;
+        border: 10px solid #000;
+        border-radius: 50%;
+        top: 8.5em;
+        left: 10em;
+    }
+    .panda.eyes::after {
+        left: 16.5em;
+    }
+    .nose::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 40px;
+        background: #000;
+        border-radius: 50%;
+        top: 11em;
+        left: 14.2em;
+    }
+    .mouse::before {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 5px;
+        background: #fff;
+        top: 15em;
+        left: 12.3em;
+        border: 10px solid #000;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-inline: 10px;
+    }
+}
+
+
+/* MEDDIA QUERY PHONE END */
